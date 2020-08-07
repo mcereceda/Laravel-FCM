@@ -379,7 +379,7 @@ class PayloadNotificationBuilder
     {
         return $this->badge;
     }
-
+    
     /**
      * Get image.
      *
