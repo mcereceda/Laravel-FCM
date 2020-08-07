@@ -56,6 +56,13 @@ class PayloadNotification implements Arrayable
      *
      * @var null|string
      */
+    protected $image;
+
+    /**
+     * @internal
+     *
+     * @var null|string
+     */
     protected $tag;
 
     /**
@@ -113,6 +120,7 @@ class PayloadNotification implements Arrayable
         $this->icon = $builder->getIcon();
         $this->sound = $builder->getSound();
         $this->badge = $builder->getBadge();
+        $this->image = $builder->getImage();
         $this->tag = $builder->getTag();
         $this->color = $builder->getColor();
         $this->clickAction = $builder->getClickAction();
@@ -136,6 +144,7 @@ class PayloadNotification implements Arrayable
             'icon' => $this->icon,
             'sound' => $this->sound,
             'badge' => $this->badge,
+            'image' => $this->image,
             'tag' => $this->tag,
             'color' => $this->color,
             'click_action' => $this->clickAction,
