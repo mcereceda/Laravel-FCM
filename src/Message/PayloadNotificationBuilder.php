@@ -58,6 +58,13 @@ class PayloadNotificationBuilder
      *
      * @var null|string
      */
+    protected $image;
+
+    /**
+     * @internal
+     *
+     * @var null|string
+     */
     protected $tag;
 
     /**
